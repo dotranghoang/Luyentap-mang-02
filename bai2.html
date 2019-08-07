@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let arr = [];
+    let select = parseInt(prompt("Chon so phan tu trong mang"));
+    for(var i = 0; i < select ; i++) {
+        arr[i] = prompt("nhap phan tu trong mang");
+    }
+    document.write("Mang sau khi nhap la: " + arr.join("-")+"<br/>");
+    arr.reverse();
+    document.write("Mang sau khi dao nguoc la: " + arr.join("-"));
+    </script>
+    
+</body>
+</html>

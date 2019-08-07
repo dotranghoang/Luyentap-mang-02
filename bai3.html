@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let count = 0;
+        let length = parseInt(prompt("Nhap kich thuoc mang"));
+        let arr = [];
+        let arr1 = [];
+        for (var i = 0; i < length; i++) {
+            arr[i] = prompt("Nhap phan tu trong mang");
+        }
+        document.write("Mang sau khi nhap la: " + arr.join(" "));
+        for(var j = 0 ; j < arr.length ; j++) {
+            if(isNaN(arr[j]) == false) {
+                arr1.push(arr[j]);
+                count++;
+            }
+        }
+        document.write("<br/>So ki tu so trong mang la: " +count+" gom: " + arr1.join(" "));
+    </script>
+</body>
+
+</html>
